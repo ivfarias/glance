@@ -12,4 +12,4 @@ COPY ./config /app/config
 COPY ./assets /app/assets
 
 EXPOSE 8080
-ENTRYPOINT ["/app/glance"]
+ENTRYPOINT ["/app/glance", "--config", "/app/config/glance.yml"]
