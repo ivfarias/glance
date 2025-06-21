@@ -1,0 +1,131 @@
+- name: Home
+  # Optionally, if you only have a single page you can hide the desktop navigation for a cleaner look
+  # hide-desktop-navigation: true
+  columns:
+    - size: small
+      widgets:
+        - type: calendar
+          first-day-of-week: sunday
+
+        - type: rss
+          limit: 10
+          collapse-after: 3
+          cache: 12h
+          feeds:
+            - url: https://greylock.com/feed/
+              title: greylock.com
+            - url: https://blog.samaltman.com/posts.atom
+              title: samaltman.com
+            - url: https://www.exponentialview.co/feed
+              title: exponentialview.co
+            - url: https://www.axios.com/newsletters/axios-ai-plus
+              title: axios ai+
+            - url: https://www.axios.com/newsletters/axios-finish-line
+              title: axios finish line
+            - url: https://www.productcompass.pm/feed
+              title: productcompass.pm
+            - url: https://andrewchen.substack.com/feed
+              title: andrewchen.substack.com
+            - url: https://www.growthunhinged.com/feed
+              title: growthunhinged.com
+            - url: https://www.kieranflanagan.io/feed
+              title: kieranflanagan.io
+            - url: https://www.lennysnewsletter.com/feed
+              title: lennysnewsletter.com
+            - url: https://www.theaiopportunities.com/feed
+              title: theaiopportunities.com
+            - url: https://www.news.aakashg.com/feed
+              title: news.aakashg.com
+            - url: https://creatoreconomy.so/feed
+              title: creatoreconomy.so
+            - url: https://www.ai-supremacy.com/feed
+              title: ai-supremacy.com
+            - url: https://heathercoxrichardson.substack.com/feed
+              title: heathercoxrichardson.substack.com
+            - url: https://www.thefp.com/feed
+              title: thefp.com
+            - url: https://erikjlarson.substack.com/feed
+              title: erikjlarson.substack.com
+            - url: https://api.axios.com/feed/
+              title: api.axios.com
+            - url: https://www.ignorance.ai/feed
+              title: ignorance.ai
+            - url: https://davisblalock.substack.com/feed
+              title: davisblalock.substack.com
+            - url: https://badmanners.substack.com/feed
+              title: badmanners.substack.com
+            - url: https://rainbowplantlife.com/category/recipes/feed/
+              title: rainbowplantlife.com
+            - url: https://minimalistbaker.com/feed/
+              title: minimalistbaker.com
+            - url: https://www.budgetbytes.com/feed/
+              title: budgetbytes.com
+            - url: https://news.mit.edu/rss/topic/artificial-intelligence2
+              title: news.mit.edu
+            - url: https://www.altpress.com/feed/
+              title: altpress.com
+            - url: https://diffuser.fm/feed/
+              title: diffuser.fm
+            - url: https://louderthanwar.com/blogs/feed/
+              title: louderthanwar.com
+            - url: https://bedroomproducersblog.com/feed/
+              title: bedroomproducersblog.com
+            - url: https://plus.pointblankmusicschool.com/feed/
+              title: plus.pointblankmusicschool.com
+            - url: https://www.autismparentingmagazine.com/feed/
+              title: autismparentingmagazine.com
+    - size: full
+      widgets:
+        - type: group
+          widgets:
+            - type: hacker-news
+            - type: lobsters
+
+        - type: videos
+          channels:
+            - UCmd52DyhaO4E1Cvy4RrHuew # Linus Tech Tips
+            - UCyFZMEnm1il5Wv3a6tPscbA # Jeff Geerling
+            - UCajXeitgFL-rb5-gXI-aG8Q # Fireship
+            - UCelkSnSbxvIfjjD01uPHHbg # Marques Brownlee
+            - UC8qHGLwIebhLgRqjm_FprrA # Veritasium
+            - UCFrj6EBhnHlWqmvuwH1Ue4g # Veritasium
+            - UCy2zz9HMHLDl8BiVoRhzxZw # Veritasium
+            - UChBEbMKI1eCcejTtmI32UEw
+            - UCd_iga_1L2crl4itLohRCLg # Marques Brownlee
+ # Veritasium
+
+        - type: group
+          widgets:
+            - type: reddit
+              subreddit: technology
+              show-thumbnails: true
+            - type: reddit
+              subreddit: selfhosted
+              show-thumbnails: true
+
+    - size: small
+      widgets:
+        - type: weather
+          location: Sao Paulo, Brazil
+          units: metric # alternatively "imperial"
+          hour-format: 24h # alternatively "24h"
+
+        - type: to-do
+
+        - type: markets
+          markets:
+            - symbol: XRP
+              name: XRP
+            - symbol: XCNUSD
+              name: XCN
+        - type: bookmarks
+  groups:
+    - links:
+        - title: Google Ads
+          url: https://ads.google.com/aw/campaigns?euid=383527800&__u=9194102200&uscid=1105458405&__c=3957710845&authuser=0
+        - title: Mixpanel
+          url: https://mixpanel.com/project/2626636/view/3164612/app/boards#id=7987499
+        - title: Cycle Meetings
+          url: https://coda.io/d/Cycle-meetings_dQ8g2KJD153/Cycle-meeting-6-16-2025_sus-Pd4P
+        - title: Apple Search Ads
+          url: https://app.searchads.apple.com/cm/app/1893840/report
