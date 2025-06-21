@@ -1,11 +1,17 @@
 package main
 
 import (
-	"os"
+	"net/http"
 
 	"github.com/glanceapp/glance/internal/glance"
 )
 
-func main() {
-	os.Exit(glance.Main())
+// Handler is the entrypoint for Vercel
+func Handler(w http.ResponseWriter, r *http.Request) {
+	mux := http.NewServeMux()
+	mux.Handle("/", glance.Start(glance.Options{
+		ConfigDir: "config",
+		AssetsDir: "assets",
+	}))
+	mux.ServeHTTP(w, r)
 }
